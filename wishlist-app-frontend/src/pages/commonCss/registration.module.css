@@ -1,0 +1,20 @@
+.gradient {
+  min-height: 80vh;
+  max-height: 100vh;
+  width: 100%;
+  background-image: url("../../img/Waves.png"), linear-gradient(180deg, rgba(255, 179, 65, 0.71) 0%, #ff971d 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media (min-width: 1600px) {
+  .gradient {
+    background-image: url("../../img/Waves1920x1080.png"), linear-gradient(180deg, rgba(255, 179, 65, 0.71) 0%, #ff971d 100%);
+  }
+}
+
+@media (min-width: 1930px) {
+  .gradient {
+    background-image: url("../../img/WavesFull.png"), linear-gradient(180deg, rgba(255, 179, 65, 0.71) 0%, #ff971d 100%);
+  }
+}

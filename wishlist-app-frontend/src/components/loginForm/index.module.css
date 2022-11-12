@@ -1,0 +1,10 @@
+.rowInput {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 376px) {
+    .rowInput {
+        flex-direction: column;
+    }
+}

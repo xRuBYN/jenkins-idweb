@@ -1,0 +1,64 @@
+{
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.1",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-only-warn": "^1.0.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.1",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.13.1",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-semantic-ui-datepickers": "^2.13.1",
+    "react-spinners": "^0.10.6",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "styled-components": "^5.2.3",
+    "styled-react-modal": "^2.1.0",
+    "styled-system": "^5.1.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "name": "wishlist",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix --ext .js,.jsx ."
+  },
+  "version": "0.0.2"
+}

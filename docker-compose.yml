@@ -1,0 +1,40 @@
+version: '3.5'
+services:
+  postgres:
+    image: 'postgres:14'
+    container_name: jenkins-postgres
+    ports:
+      - '5432:5432'
+      - '3200:5432'
+    environment:
+      - POSTGRES_DB=wish-app
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      jenkins:
+
+
+  app-jenkins-back:
+    build: ./wishlist-app-backend
+    container_name: jenkins-back-app
+    ports:
+      - '8085:8080'
+    networks:
+      jenkins:
+
+
+  jenkins-front-app:
+    build: ./wishlist-app-frontend
+    image: jenkins.frontend:1.0.0
+    container_name: jenkins-front-app
+    ports:
+      - '4200:3000'
+    depends_on:
+      - 'app-jenkins-back'
+    networks:
+      jenkins:
+
+
+networks:
+  jenkins:
+    driver: bridge

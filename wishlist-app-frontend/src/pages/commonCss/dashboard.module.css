@@ -1,0 +1,13 @@
+.gradient {
+    composes: gradient from "./registration.module.css";
+    background-image: url("../../img/1920 Gift.png"),
+    linear-gradient(180deg, rgba(255, 179, 65, 0.71) 0%, #ff971d 100%);
+    max-height: 10000vh;
+}
+
+@media (min-width: 1930px) {
+    .gradient {
+        background-image: url("../../img/WavesGiftLarge.png"),
+        linear-gradient(180deg, rgba(255, 179, 65, 0.71) 0%, #ff971d 100%);
+    }
+}
