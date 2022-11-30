@@ -20,7 +20,7 @@ import java.util.Optional;
 @Service
 @Slf4j
 @Transactional(readOnly = true)
-public class WishServiceImpl implements WishService {
+public class  WishServiceImpl implements WishService {
 
     private final EventService eventService;
 
