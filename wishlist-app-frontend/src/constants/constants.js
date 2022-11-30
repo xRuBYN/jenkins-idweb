@@ -10,7 +10,7 @@ export const paths = {
 }
 
 export const url = {
-  baseUrl: "http://app-jenkins-back:8080",
+  baseUrl: "http://localhost:8085",
   get registerUrl() {
     return `${this.baseUrl}/register`
   },
