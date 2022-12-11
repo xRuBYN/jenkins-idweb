@@ -15,9 +15,10 @@ services:
 
 
   localhost:
-#    build: ./wishlist-app-backend
-    image: 'xrubyn/jenkins-back:latest'
-#    image: backend:1.0.0 use this for local deploy
+    build: ./wishlist-app-backend
+    #image: 'xrubyn/jenkins-back:latest'
+    #use this for local deploy
+    image: backend:1.0.0
     container_name: jenkins-back-app
     ports:
       - '8085:8085'
@@ -28,9 +29,10 @@ services:
 
 
   jenkins-front-app:
-#    build: ./wishlist-app-frontend
-    image: 'xrubyn/jenkins-front:latest'
-#    image: frontend:1.0.0 use this for local deploy
+    build: ./wishlist-app-frontend
+#    image: 'xrubyn/jenkins-front:latest'
+    #use this for local deploy
+    image: frontend:1.0.0
     container_name: jenkins-front-app
     ports:
       - '4200:3000'
